@@ -57,10 +57,3 @@ Neovim terminal. The ones calling this plugin in particular are:
 These are terminal-mode mappings (like insert, but within a terminal) which
 will open the picker and then go back to to terminal-mode once a selection is
 made.
-
-## Known bugs
-
-The picker does not go back into terminal mode if cancelled, e.g. pressing
-`<C-c>` instead of Tab or Enter. A fix is waiting on [this issue](https://github.com/nvim-telescope/telescope.nvim/issues/2390).
-You can make the change described in the issue yourself in your local
-telescope files if you want this to work today.
