@@ -59,4 +59,6 @@ made.
 ## Known bugs
 
 The picker does not go back into terminal mode if cancelled, e.g. pressing
-`<C-c>` instead of Tab or Enter.
+`<C-c>` instead of Tab or Enter. Waiting on [this issue](https://github.com/nvim-telescope/telescope.nvim/issues/2390).
+You can make the change manually in your local telescope files if you want this
+to work today.
