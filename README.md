@@ -19,6 +19,9 @@ output for use elsewhere.
 I have no idea how modern-day Neovim plugin installation works. I still use pathogen
 with vendored plugins. Using pathogen, git clone into the `bundle` directory.
 
+You must have [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+installed as well for this plugin to do anything.
+
 ## How to use
 
 This plugin automatically adds two new commands that open pickers. After the
