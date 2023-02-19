@@ -1,5 +1,7 @@
 # Telescope buffer extract
 
+![WindowsTerminal_f29utBfQhh](https://user-images.githubusercontent.com/6634136/219940608-398c6145-a0df-4c47-9c1b-45cdb9d0c408.gif)
+
 ## What does this do?
 
 This allows you to fuzzy-select a word or line from the current buffer using
