@@ -14,12 +14,12 @@ output for use elsewhere.
 
 ## Installation
 
-I have no idea how modern-day Neovim installation works. I still use pathogen
+I have no idea how modern-day Neovim plugin installation works. I still use pathogen
 with vendored plugins. Using pathogen, git clone into the `bundle` directory.
 
 ## How to use
 
-This plugin automatically adds two new commands that open a pickers. After the
+This plugin automatically adds two new commands that open pickers. After the
 telescope picker closes, you will automatically go back to insert or terminal
 mode, depending on the active buffer. This is the default behaviour, but can be
 overridden.
@@ -32,7 +32,7 @@ Alternatively, with Lua:
     :lua require'telescope-buffer-extract'.pick_word()
     :lua require'telescope-buffer-extract'.pick_line()
 
-If you do not want to enter insert mode after running the functions, add `true`.
+If you do not want to enter insert/terminal mode after running the functions, do:
 
     :lua require'telescope-buffer-extract'.pick_word({no_insert_mode = true})
     :lua require'telescope-buffer-extract'.pick_line({no_insert_mode = true})
@@ -47,9 +47,9 @@ I use the Neovim terminal only when I'm working in Windows, otherwise on Linux
 I'm using tmux. I have some keybindings to emulate tmux workflows inside the
 Neovim terminal. The ones calling this plugin in particular are:
 
-    " like tmux extrakto, by word
+    " by word
     tnoremap <c-b><tab> <c-\><c-n>:TelescopeBufferExtractWord<cr>
-    " like tmux extrakto, by line
+    " by line
     tnoremap <c-b>` <c-\><c-n>:TelescopeBufferExtractLine<cr>
 
 These are terminal-mode mappings (like insert, but within a terminal) which
@@ -59,6 +59,6 @@ made.
 ## Known bugs
 
 The picker does not go back into terminal mode if cancelled, e.g. pressing
-`<C-c>` instead of Tab or Enter. Waiting on [this issue](https://github.com/nvim-telescope/telescope.nvim/issues/2390).
-You can make the change manually in your local telescope files if you want this
-to work today.
+`<C-c>` instead of Tab or Enter. A fix is waiting on [this issue](https://github.com/nvim-telescope/telescope.nvim/issues/2390).
+You can make the change described in the issue yourself in your local
+telescope files if you want this to work today.
