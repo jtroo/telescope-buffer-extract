@@ -5,10 +5,10 @@
 "
 " Maintainer:   jtroo
 
-if exists("g:loaded_openfileline")
+if exists("g:loaded_telescopebufferextract")
     finish
 endif
-let g:loaded_openfileline = 1
+let g:loaded_telescopebufferextract = 1
 
 command! -nargs=* TelescopeBufferExtractLine lua require("telescope-buffer-extract").pick_line()
 command! -nargs=* TelescopeBufferExtractWord lua require("telescope-buffer-extract").pick_word()
