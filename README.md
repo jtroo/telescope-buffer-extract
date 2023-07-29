@@ -58,5 +58,5 @@ Neovim terminal. The ones calling this plugin in particular are:
     tnoremap <c-b>` <c-\><c-n>:TelescopeBufferExtractLine<cr>
 
 These are terminal-mode mappings (like insert, but within a terminal) which
-will open the picker and then go back to to terminal-mode once a selection is
+will open the picker and then go back to terminal-mode once a selection is
 made.
